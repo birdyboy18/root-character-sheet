@@ -1,0 +1,46 @@
+[
+  {
+    "name": "The Arbiter",
+    "description": "You are a powerful, obstinate vagabond, serving as somewhere between a mercenary and a protector, perhaps taking sides too easily in the greater conflict between the factions.",
+    "details": [
+      "he, she, they, shifting",
+      "large, scarred, well-groomed, old",
+      "faded military insignia, eyepatch, repaired clothes, tarnished locket"
+    ],
+    "demeanor": ["intimidating,honest,brusque,open"],
+    "nature": [
+      {
+        "name": "Defender",
+        "description": "Clear your exhaustion track when you put yourself in harm’s way to defend someone against injustice or dire threat."
+      },
+      {
+        "name": "Punisher",
+        "description": "Clear your exhaustion track when you tell a powerful or dangerous villain to their face that you will punish them."
+      }
+    ],
+    "drives": ["justice", "principles"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 1,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": -1,
+      "might": 2
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": []
+    },
+    "weaponSkills": {
+      "allowed": ["cleave", "disarm", "parry", "storm-a-group"],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 10
+    }
+  }
+]

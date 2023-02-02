@@ -1,0 +1,47 @@
+{
+  "acrobatics": {
+    "name": "Acrobatics",
+    "description": "Adeptly climbing, vaulting, jumping",
+    "risks": "Break something, detection, plunge into danger"
+  },
+  "blindside": {
+    "name": "Blindside",
+    "description": "Backstab, murder, sneak attack, suckerpunch",
+    "risks": "Draw unwanted attention, leave evidence, plunge into danger"
+  },
+  "counterfeit": {
+    "name": "Counterfeit",
+    "description": "Copying, forgery, fakery",
+    "risks": "Leave evidence, take too long, weak result"
+  },
+  "disable-device": {
+    "name": "Disable Device",
+    "description": "Disarming traps, turning off mechanisms",
+    "risks": "Break something, draw unwanted attention, expend resources"
+  },
+  "hide": {
+    "name": "Hide",
+    "description": "Disappear from view, remain hidden",
+    "risks": "Expend resources, leave evidence, take too long"
+  },
+  "pick-lock": {
+    "name": "Pick Lock",
+    "description": "Open a locked door, chest, etc.",
+    "risks": "Break something, detection, plunge into danger"
+  },
+  "pickpocket": {
+    "name": "Pick Pocket",
+    "description": "Subtly steal from a pocket",
+    "risks": "Leave evidence, take too long, weak result"
+  },
+  "sleight-of-hand": {
+    "name": "Sleight of Hand",
+    "description": "Palming, switching, ditching, flourishes",
+    "risks": "Draw unwanted attention, leave evidence, weak result"
+  },
+  "sneak": {
+    "name": "Sneak",
+    "description": "Get into or out of places without being seen",
+    "risks": "Break something, draw unwanted attention, plunge into danger"
+  }
+}
