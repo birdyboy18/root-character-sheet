@@ -1,6 +1,7 @@
-import { LoaderFn, MakeGenerics, useMatch } from '@tanstack/react-location'
+import { Link, LoaderFn, MakeGenerics } from '@tanstack/react-location'
 
 import { getRepo, Repo } from '@/api'
+import { PatternedHeading } from '@/components/patternedHeading'
 
 type Route = MakeGenerics<{ LoaderData: Repo }>
 
@@ -9,20 +10,15 @@ export const loader: LoaderFn<Route> = () => {
 }
 
 export default function Home() {
-  const { data } = useMatch<Route>()
+  // const { data } = useMatch<Route>()
 
   return (
     <>
-      <img className="h-32 w-32" src="/assets/icons/logo.svg" alt={data.name} title={data.name} />
-      <em className="mt-4 text-gray-700">{data.description}</em>
-
-      <ul className="mt-8">
-        <li>
-          <a href={data.html_url} target="_blank" rel="noopener noreferrer">
-            <img className="h-6 w-6 opacity-50 hover:opacity-80" src="/assets/icons/github.svg" alt="GitHub" />
-          </a>
-        </li>
-      </ul>
+      <PatternedHeading w="1/3" text="Your Characters" />
+      <p className="text-2xl opacity-50">You haven&rsquo;t made any characters yet</p>
+      <Link to="/character/new" className="mt-6 bg-green-700 px-6 py-3 text-2xl text-white">
+        Create New Character
+      </Link>
     </>
   )
 }

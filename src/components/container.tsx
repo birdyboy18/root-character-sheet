@@ -1,3 +1,5 @@
+import { useMatch } from '@tanstack/react-location'
+
 import { Header } from '@/components'
 
 type Props = {
@@ -6,9 +8,11 @@ type Props = {
 
 export const Container = ({ children }: Props) => {
   return (
-    <div className="flex min-h-screen flex-col p-6">
-      <Header />
-      <main className="flex flex-1 flex-col items-center justify-center">{children}</main>
-    </div>
+    <>
+      <div className="flex min-h-screen flex-col bg-cream-100">
+        <Header />
+        <main className="flex flex-col items-center justify-center py-8">{children}</main>
+      </div>
+    </>
   )
 }

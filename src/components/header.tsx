@@ -5,40 +5,19 @@ export const Header = () => {
   const auth = useAuth()
 
   return (
-    <header className="flex items-center justify-between">
-      <ul className="flex items-center gap-4 font-mono">
-        <li>
-          <Link className="p-2 hover:underline" to="/">
-            /home
-          </Link>
-        </li>
-
-        {auth.token ? (
+    <header className="flex w-full items-center justify-between bg-slate-900 py-2">
+      <div className="container mx-auto flex flex-wrap justify-between text-white">
+        <Link to="/">Root Character Sheet</Link>
+        <ul className="flex flex-wrap space-x-4">
           <li>
-            <Link className="p-2 hover:underline" to="/logout">
-              /auth
-            </Link>
+            <Link to="/about">About</Link>
           </li>
-        ) : (
+          {/* make a dropdown to import multiple things */}
           <li>
-            <Link className="p-2 hover:underline" to="/login">
-              /auth
-            </Link>
+            <Link to="/import">Import</Link>
           </li>
-        )}
-
-        <li>
-          <Link className="p-2 hover:underline" to="/routing">
-            /routing
-          </Link>
-        </li>
-      </ul>
-
-      {auth.token && (
-        <span className="opacity-50" role="img" aria-label="private">
-          🔒
-        </span>
-      )}
+        </ul>
+      </div>
     </header>
   )
 }
