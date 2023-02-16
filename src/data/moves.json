@@ -154,5 +154,551 @@
       "might": 0,
       "injury": 0
     }
+  },
+  "cross-country": {
+    "name": "Cross Country",
+    "description": "Take one extra box of exhaustion. When your exhaustion track is full and you must mark exhaustion, you may choose to mark an equivalent amount of injury instead of being removed from the situation or going unconscious.",
+    "playbook": "harrier",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "fleet-of-foot-and-hand": {
+    "name": "Fleet of Foot and Hand",
+    "description": "Take +1 Finesse (max +3).",
+    "playbook": "harrier",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 1,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "dont-shoot-the-messenger": {
+    "name": "Don't Shoot the Messenger",
+    "description": "Take the Counterfeit roguish feat (it does not count against your limit.) When you pretend to be an innocuous messenger carrying a missive of import to trick someone, roll with Luck instead of Cunning.",
+    "playbook": "harrier",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "parkour": {
+    "name": "Parkour",
+    "description": "When you dash your way through a chaotic scene or fight, roll with Finesse. On a 10+, hold 3. On a 7-9, hold 2. Spend your hold 1-for-1 to dash to something within sight and reach without being stopped, or to dash away from something nearby without being stopped. You can dash away from an enemy even at the moment they attack. On a miss, your surroundings trip you up, and you’re caught in place while danger closes in.",
+    "playbook": "harrier",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "traveler-extraordinaire": {
+    "name": "Traveler Extraordinaire",
+    "description": "When you travel along the paths to another clearing, you can always give +1 to the roll or clear 2-exhaustion, your choice. When you travel through the forest to another clearing, you can always give +1 to the roll or clear 2-depletion, your choice. In both cases, before you arrive at the next clearing, you can ask the GM any two questions about the next clearing, based on what you remember from your last time through.",
+    "playbook": "harrier",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "smugglers-path": {
+    "name": "Smuggler's Path",
+    "description": "You’ve got a good sense for finding secret paths and doors. When you spend time looking for a secret way in or out of a place that might have one, mark exhaustion and roll with Luck. On a hit, you find a hidden path—the GM will detail it and to where it leads. On a 10+, there’s something along or inside the path of value to you—the GM will tell you what. On a miss, you find a secret path...and someone else is using it right this second. They probably won’t be happy you found their secret.",
+    "playbook": "harrier",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "silent-paws": {
+    "name": "Silent Paws",
+    "description": "You are adept at slipping into and out of dangerous situations without anyone noticing. When you attempt a roguish feat to sneak or hide, you can mark 2-exhaustion to shift a miss to a 7-9.",
+    "playbook": "ranger",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "slip-away": {
+    "name": "Slip Away",
+    "description": "When you take advantage of an opening to escape from a dangerous situation, roll with Finesse. On a hit, you get away. On a 10+, choose 1. On a 7-9, choose 2: You suffer injury or exhaustion (GM’s choice) during your escape | You end up in another dangerous situation | You leave something important behind On a miss, you escape, but it costs you—mark injury or exhaustion, GM’s choice—and you leave ample evidence behind for your foes to track and follow you.",
+    "playbook": "ranger",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "poisons-and-antidotes": {
+    "name": "Poisons and Antidotes",
+    "description": "You have expertise in the poisons and antidotes of the Woodland. When you brew a poison, mark depletion and say what effect you want it to have: sleep, weakness, inebriation, or death. Any poison you make requires ingestion or injection; you can use the poison on your weapon or put it in your target’s food or drink. When you study a poison or its effects to make an antidote, the GM will tell you what special ingredient you’ll need. Get the ingredient and mark depletion to brew the antidote.",
+    "playbook": "ranger",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "forager": {
+    "name": "Forager",
+    "description": "When you travel or pass into a forest, before making any travel move, you can clear your choice of: Up to 3-depletion | Up to 2-exhaustion | Up to 2-injury",
+    "playbook": "ranger",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "threatening-visage": {
+    "name": "Threatening Visage",
+    "description": "When you persuade an NPC with open threats or naked steel, roll with Might instead of Charm.",
+    "playbook": "ranger",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "dirty-fighter": {
+    "name": "Dirty Fighter",
+    "description": "Take two of the following weapon skills: Trick Shot, Confuse Senses, Improvise Weapon, Disarm, Vicious Strike. None of the skills you take with this move count against your maximum for advancement.",
+    "playbook": "ranger",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "always-armed": {
+    "name": "Always Armed",
+    "description": "Take the weapon skill Improvise a Weapon (it does not count against your limit). When you deal harm with an improvised weapon, deal +1 harm.",
+    "playbook": "ronin",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "knowing-a-lords-will": {
+    "name": "Knowing a Lord's Will",
+    "description": "When you figure out a denizen of status, authority, or power, roll with Might instead of Charm. When you trick a denizen of status, authority, or power by playing subordinate, roll with Might instead of Cunning.",
+    "playbook": "ronin",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "well-mannered": {
+    "name": "Well-Mannered",
+    "description": "When you enter a social environment dependent on manners and etiquette, roll with Cunning. On a 10+, hold 3. On a 7-9, hold 2. Lose all hold when you leave or when social rules fall apart. Spend hold 1-for-1 to: Cover up a social faux pas on behalf of yourself or an ally; clear 1-exhaustion | Call out someone else’s social faux pas; inflict 1-morale harm on them | Charm someone; take +1 ongoing to speak to them while you have hold | Demonstrate your value; mark prestige with a powerful denizen’s faction On a miss, the rules of etiquette here are far different from what you expected; mark exhaustion as you commit a gravely impolite error.",
+    "playbook": "ronin",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "fealty": {
+    "name": "Fealty",
+    "description": "When you commit yourself to the cause of someone you deem worthy, swear an oath to them stating what task you will complete on their behalf. Mark exhaustion to reroll a move made in pursuit of that task. You cannot commit yourself to another cause until you accomplish the first, or break your oath. If you break your oath, fill your exhaustion track and mark 4-notoriety with the faction whose trust you betrayed. If you fulfill your oath, mark 4-prestige with the faction whose trust you kept.",
+    "playbook": "ronin",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "the-rules-of-war": {
+    "name": "The Rules of War",
+    "description": "When you call upon a reasonable foe to uphold a rule of war, roll with Might. On a hit, they feel obliged; choose one below they must follow. On a 7-9, they choose one that you must follow; disobey, and the obligation ends. Show mercy to surrendering foes and prisoners | Refrain from underhanded tactics in a fight | Face each other without aid, back-up, or assistance | Keep the violence away from the unarmed or innocent | Fight to surrender or subdual, without retreat. On a miss, they feel no obligation to your ideas of war; prepare for a brutal lesson in the rules they adhere to.",
+    "playbook": "ronin",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "always-watching": {
+    "name": "Always Watching",
+    "description": "Take +1 Cunning (max +3).",
+    "playbook": "ronin",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 1,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "arsonist": {
+    "name": "Arsonist",
+    "description": "When you wreck something with flagrantly dangerous means (explosives,uncontrolled flame, etc.), roll with Luck instead of Might.",
+    "playbook": "scoundrel",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "create-to-destroy": {
+    "name": "Create to Destroy",
+    "description": "When you use available materials to rig up a dangerous device, roll with Finesse. On a hit, you cobble together something that will do what you want, one time. On a 10+, choose one. On a 7-9, choose two. The device is: More dangerous than intended | Larger or more unwieldy than intended | More temperamental and fragile than intended. On a miss, you need some vital component to finish it; the GM will tell you what.",
+    "playbook": "scoundrel",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "its-a-distraction": {
+    "name": "It's a Distraction",
+    "description": "You gain the roguish feat Blindside (it does not count against your limit). When you attempt a roguish feat to blindside someone while they are distracted by environmental dangers (a raging fire, an oncoming flood, etc.), roll with Luck instead of Cunning.",
+    "playbook": "scoundrel",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "daredevil": {
+    "name": "Daredevil",
+    "description": "You’re at your luckiest when you go into danger without hesitation. When you dive into a dangerous situation without forethought or planning, treat yourself as having “Luck Armor,” with 1 box of wear (remember, armor is only “destroyed” when you would mark another box of wear, and all its boxes are full). The “Luck Armor” automatically goes away once the danger has passed, and the next time you would have “Luck Armor,” you gain it as if it was brand new with clear boxes.",
+    "playbook": "scoundrel",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "danger-mask": {
+    "name": "Danger Mask",
+    "description": "You have a mask or outfit you wear when you go about your most destructive work—more of a calling card, an identifier of “the real you,” than a disguise. Treat it as a piece of equipment with two boxes of wear. While you have your mask on, any notoriety you gain is doubled, any prestige you gain is halved, and take +1 to trust fate and all Scoundrel playbook moves. If your mask is ever taken from you, mark exhaustion. If your mask is ever destroyed, mark 4-exhaustion. If your mask is destroyed, you can make a new mask when time passes.",
+    "playbook": "scoundrel",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "better-lucky-than-good": {
+    "name": "Better Lucky than Good",
+    "description": "When you use a weapon move (basic or skilled), mark exhaustion to roll with Luck instead of the listed stat.",
+    "playbook": "scoundrel",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "breaking-and-entering": {
+    "name": "Breaking and Entering",
+    "description": "When you attempt roguish feats to get into or out of a place you’ve previously been, you can mark exhaustion to make the move as if you had rolled a 10+, instead of rolling.",
+    "playbook": "thief",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "disappear-into-the-dark": {
+    "name": "Disappear Into the Dark",
+    "description": "When you slip into shadows while unnoticed, mark exhaustion and hold 1. As long as you remain quiet, move slowly, and hold 1 for this move, you will remain hidden. If you inadvertently reveal yourself, lose your hold. Spend your hold to reveal yourself from a darkened place, suddenly and without warning. If you attack someone immediately after spending the hold, take +3 on the roll.",
+    "playbook": "thief",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "rope-a-dope": {
+    "name": "Rope-a-Dope",
+    "description": "When you evade and dodge your enemy so as to tire them out, roll with Finesse. On a hit, you can mark exhaustion to make them mark 2-exhaustion. On a 10+, you can mark exhaustion to make them mark 3-exhaustion. On a miss, they catch you in the middle of a dodge—you’re at their mercy.",
+    "playbook": "thief",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "small-hands": {
+    "name": "Small hands",
+    "description": "When you grapple with an enemy larger than you, roll with Finesse instead of Might. On a miss, they overpower you—you’re at their mercy.",
+    "playbook": "thief",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "master-thief": {
+    "name": "Master Thief",
+    "description": "Take +1 Finesse (max +3).",
+    "playbook": "thief",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 1,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "nose-for-gold": {
+    "name": "Nose for Gold",
+    "description": "When you figure someone out, you can always ask (even on a miss): what is the most valuable thing they are carrying? When you read a tense situation, you can always ask (even on a miss): what is the most valuable thing here?",
+    "playbook": "thief",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "toolbox": {
+    "name": "Toolbox",
+    "description": "You have a kit of tools and supplies with which you work on long-term projects. Choose two features: assorted scrap wood, assorted gears and springs, esoteric hand tools, manuals, assorted medicines, portable alchemy kit, sewing kit, cookware, minor explosives. Choose one drawback: heavy (counts as 2 Load instead of 1), bulky & obvious, stolen, fragile When you open up your toolkit and dedicate yourself to making a thing or to getting to the bottom of something, decide what and tell the GM. The GM will give you between 1 to 4 conditions you must fulfill to accomplish your goal, including time taken, materials needed, help needed, facilities/tools needed, or the limits on the project. When you accomplish the conditions, you accomplish the goal.",
+    "playbook": "tinker",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "repair": {
+    "name": "Repair",
+    "description": "When you repair destroyed personal equipment with your toolbox, the GM will set one condition as per the Toolbox move. Fulfill it, and clear all wear for that equipment. When you repair damaged personal equipment with your toolkit, you do it as long as you spend depletion or Value, 1 for 1, for each box of wear you clear.",
+    "playbook": "tinker",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "big-pockets": {
+    "name": "Big Pockets",
+    "description": "Take two extra boxes of depletion.",
+    "playbook": "tinker",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "jury-rig": {
+    "name": "Jury Rig",
+    "description": "When you create a makeshift device on the fly, roll with Cunning. On a hit, you create a device that works once, then breaks. On a 10+, choose one: It works exceptionally well | You get an additional use out of it. On a miss, the device works, but it has an unintended side effect that the GM will reveal when you use it.",
+    "playbook": "tinker",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "nimble-mind": {
+    "name": "Nimble Mind",
+    "description": "When you attempt roguish feats involving mechanisms or locks, mark depletion to roll with Cunning instead of Finesse.",
+    "playbook": "tinker",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "dismantle": {
+    "name": "Dismantle",
+    "description": "When you dismantle a broken or disabled piece of equipment or machinery, clear 2-depletion.",
+    "playbook": "tinker",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "instigator": {
+    "name": "Instigator",
+    "description": "When you trick an NPC into fighting another NPC, you can remove one option from the 7-9 list—they cannot choose that option instead of doing what you want.",
+    "playbook": "instigator",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "pleasant-facade": {
+    "name": "Pleasant Facade",
+    "description": "When you suck up to or otherwise butter up an unsuspecting NPC, roll with Charm. On a 10+, hold 3. On a 7-9, hold 2. Spend your hold 1 for 1 to deflect their suspicion or aggression away from you onto someone or something else. On a miss, your attempts at flattery are suspicious—they’re going to keep their eye on you.",
+    "playbook": "instigator",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "desperate-smile": {
+    "name": "Desperate Smile",
+    "description": "When you trust fate to see you through by begging, pleading, or abasing yourself, roll with Charm instead of Luck.",
+    "playbook": "instigator",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "charm-offensive": {
+    "name": "Charm Offensive",
+    "description": "When you play upon an enemy’s insecurities, concerns, or fears to distract them with words during a fight, roll with Cunning. On a hit, you create an opening for yourself—make any available weapon move against them at +1, or strike quickly and deal injury to them. On a 7-9, you also tick them off; they aren’t listening to you anymore, no matter what you do, until the situation drastically changes. On a miss, you infuriate them—they come at you, hard, and you’re not prepared.",
+    "playbook": "instigator",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "lets-play": {
+    "name": "Let's Play",
+    "description": "When you play a game of skill and wit to loosen another’s tongue, roll with Charm. On a hit, they let slip something useful or valuable. On a 7-9, you have to lose the game to get them there; mark depletion. On a miss, they’re better than you ever thought; either mark depletion and cut your losses, or mark 3-depletion and they’ll start talking.",
+    "playbook": "instigator",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
+  },
+  "pocket-sand": {
+    "name": "Pocket Sand",
+    "description": "Take the weapon skill Confuse Senses (it does not count against your limit). When you throw something to confuse an opponent’s senses at close or intimate range, roll with Cunning instead of Finesse.",
+    "playbook": "instigator",
+    "attributeModifiers": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 0,
+      "luck": 0,
+      "might": 0,
+      "injury": 0
+    }
   }
 }
