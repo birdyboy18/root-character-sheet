@@ -1,5 +1,6 @@
-[
-  {
+{
+  "arbiter": {
+    "id": "arbiter",
     "name": "The Arbiter",
     "description": "You are a powerful, obstinate vagabond, serving as somewhere between a mercenary and a protector, perhaps taking sides too easily in the greater conflict between the factions.",
     "details": [
@@ -18,7 +19,7 @@
         "description": "Clear your exhaustion track when you tell a powerful or dangerous villain to their face that you will punish them."
       }
     ],
-    "drives": ["justice", "principles"],
+    "drives": ["justice", "principles", "loyalty", "protection"],
     "background": {
       "where": [],
       "why": [],
@@ -39,8 +40,446 @@
       "allowed": ["cleave", "disarm", "parry", "storm-a-group"],
       "presets": []
     },
+    "moves": {
+      "allowed": ["brute", "carry-a-big-stick", "crash-and-smash", "hardy", "strong-draw", "guardian"],
+      "presets": []
+    },
     "equipment": {
       "startValue": 10
     }
+  },
+  "adventurer": {
+    "id": "adventurer",
+    "name": "The Adventurer",
+    "description": "You are a peaceful, diplomatic vagabond, making allies from those you aid, perhaps toppling greater powers by forging strong bonds with others.",
+    "details": [
+      "he, she, they, shifting",
+      "formal, colorful, multicultural, simple",
+      "medal of service, beaded jewelry, carved flute, pouches with pretty stones"
+    ],
+    "demeanor": ["harming, diplomatic, agreeable, stern"],
+    "nature": [
+      {
+        "name": "Extrovert",
+        "description": "Clear your exhaustion track when you share a moment of real warmth, friendship, or enjoyment with someone."
+      },
+      {
+        "name": "Peacemaker",
+        "description": "Clear your exhaustion track when you resolve a dangerous conflict nonviolently."
+      }
+    ],
+    "drives": ["ambition", "clean-paws", "principles", "justice"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 2,
+      "cunning": 1,
+      "finesse": 0,
+      "luck": 0,
+      "might": -1
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["counterfeit", "sleight-of-hand"]
+    },
+    "weaponSkills": {
+      "allowed": ["harry", "disarm", "parry", "improvise"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": [
+        "sterling-reputation",
+        "subduing-strikes",
+        "talon-on-the-pulse",
+        "orator",
+        "well-read",
+        "fast-friends"
+      ],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 9
+    }
+  },
+  "harrier": {
+    "id": "harrier",
+    "name": "The Harrier",
+    "description": "You are a quick, enterprising vagabond, racing easily from building to building and clearing to clearing without anything stopping you, perhaps finding yourself in places others would rather keep secret or hidden.",
+    "details": [
+      "he, she, they, shifting",
+      "roguish, kitted out, vibrant, scarred",
+      "half-started maps, sewn bandana, ball and cup, wide-brimmed hat"
+    ],
+    "demeanor": ["excited, energetic, passionate, flighty"],
+    "nature": [
+      {
+        "name": "Dutiful",
+        "description": "Clear your exhaustion track when you take on a dangerous or difficult task on behalf of another."
+      },
+      {
+        "name": "Competitive",
+        "description": "Clear your exhaustion track when you take dramatically unnecessary risks to show off."
+      }
+    ],
+    "drives": ["crime", "discovery", "infamy", "wanderlust"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 0,
+      "cunning": -1,
+      "finesse": 2,
+      "luck": 1,
+      "might": 0
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["acrobatics", "sneak"]
+    },
+    "weaponSkills": {
+      "allowed": ["harry", "disarm", "quick-shot", "trick-shot"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": [
+        "cross-country",
+        "fleet-of-foot-and-hand",
+        "dont-shoot-the-messenger",
+        "parkour",
+        "traveler-extraordinaire",
+        "smugglers-path"
+      ],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 9
+    }
+  },
+  "ranger": {
+    "id": "ranger",
+    "name": "The Ranger",
+    "description": "You are a capable, stealthy vagabond, centered on the forests that fill the Woodland between the clearings, more interested in the wilds than in the company of other Woodland denizens or their society.",
+    "details": [
+      "he, she, they, shifting",
+      "unkempt, scarred, natural, practical",
+      "forest charm, leafy cloak, smoking pipe, stolen ring"
+    ],
+    "demeanor": ["terse, mistrusting, polite, kind"],
+    "nature": [
+      {
+        "name": "Loner",
+        "description": "Clear your exhaustion track when you enter a dangerous situation alone, without backup or assistance."
+      },
+      {
+        "name": "Cynic",
+        "description": "Clear your exhaustion track when you openly and directly ask dangerous questions about an accepted “truth”."
+      }
+    ],
+    "drives": ["freedom", "discovery", "revenge", "protection"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": -1,
+      "cunning": 1,
+      "finesse": 1,
+      "luck": 0,
+      "might": 1
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["hide", "sneak"]
+    },
+    "weaponSkills": {
+      "allowed": ["cleave", "disarm", "harry", "vicious-strike"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": [
+        "silent-paws",
+        "slip-away",
+        "poisons-and-antidotes",
+        "forager",
+        "threatening-visage",
+        "dirty-fighter"
+      ],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 9
+    }
+  },
+  "ronin": {
+    "id": "ronin",
+    "name": "The Ronin",
+    "description": "You are a skilled, willful vagabond, formerly a servant of a lord in a different land, now masterless. You came to the Woodland to live as a free vagabond.",
+    "details": [
+      "he, she, they, shifting",
+      "militaristic, outlandish, simple, colorful",
+      "lord’s token, mark of esteem, stringed instrument, board game"
+    ],
+    "demeanor": ["gruff, polite, direct, dangerous"],
+    "nature": [
+      {
+        "name": "Survivor",
+        "description": "Clear your exhaustion track when you try to flee or cover allies’ flight from a dangerous or overwhelming situation."
+      },
+      {
+        "name": "Pilgrim",
+        "description": "Clear your exhaustion track when you find an expert in a skill you don’t possess."
+      }
+    ],
+    "drives": ["principles", "revenge", "thrills", "wanderlust"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 0,
+      "cunning": 1,
+      "finesse": 0,
+      "luck": -1,
+      "might": 2
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["blindside"]
+    },
+    "weaponSkills": {
+      "allowed": ["cleave", "storm-a-group", "harry", "vicious-strike"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": [
+        "always-armed",
+        "knowing-a-lords-will",
+        "well-mannered",
+        "fealty",
+        "the-rules-of-war",
+        "always-watching"
+      ],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 11
+    }
+  },
+  "scoundrel": {
+    "id": "scoundrel",
+    "name": "The Scoundrel",
+    "description": "You are a lucky, dangerous vagabond, acting more as destroyer and troublemaker than anything else, perhaps creating chaos and destruction for its own sake.",
+    "details": [
+      "he, she, they, shifting",
+      "suspicious, impoverished, flea-bitten, scarred",
+      "full face mask, mousesteel spark lighter, overly large coat, sulphurous pouches"
+    ],
+    "demeanor": ["shifty, slimy, straightforward, naive"],
+    "nature": [
+      {
+        "name": "Arsonist",
+        "description": "Clear your exhaustion track when you use needlessly destructive or damaging methods to solve a problem."
+      },
+      {
+        "name": "Combative",
+        "description": "Clear your exhaustion track when you try to start a fight against overwhelming opposition."
+      }
+    ],
+    "drives": ["chaos", "crime", "thrills", "infamy"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 1,
+      "cunning": -1,
+      "finesse": 0,
+      "luck": 2,
+      "might": 0
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["acrobatics", "hide", "sneak"]
+    },
+    "weaponSkills": {
+      "allowed": ["confuse-senses", "improvise", "quick-shot", "vicious-strike"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": [
+        "arsonist",
+        "create-to-destroy",
+        "its-a-distraction",
+        "daredevil",
+        "danger-mask",
+        "better-lucky-than-good"
+      ],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 8
+    }
+  },
+  "thief": {
+    "id": "thief",
+    "name": "The Thief",
+    "description": "You are a cunning, criminal vagabond, capable of stealing even the most well-guarded treasures, perhaps committed to crime and theft for its own sake.",
+    "details": [
+      "he, she, they, shifting",
+      "worn, fidgety, inconspicuous, flamboyant",
+      "black cape, large bag, old broken weapon, stolen scarf"
+    ],
+    "demeanor": ["fast-talking, quiet, angry, friendly"],
+    "nature": [
+      {
+        "name": "Kleptomaniac",
+        "description": "Clear your exhaustion track when you try to selfishly steal something valuable or important."
+      },
+      {
+        "name": "Rebellious",
+        "description": "Clear your exhaustion track when you grievously insult, defy, or anger figures of authority."
+      }
+    ],
+    "drives": ["freedom", "greed", "thrills", "ambition"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 0,
+      "cunning": 0,
+      "finesse": 2,
+      "luck": 1,
+      "might": -1
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": []
+    },
+    "weaponSkills": {
+      "allowed": ["confuse-senses", "improvise", "parry", "trick-shot"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": [
+        "breaking-and-entering",
+        "disappear-into-the-dark",
+        "rope-a-dope",
+        "small-hands",
+        "master-thief",
+        "node-for-gold"
+      ],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 6
+    }
+  },
+  "tinker": {
+    "id": "tinker",
+    "name": "The Tinker",
+    "description": "You are an adept, clever vagabond, interested in mechanisms and craftsmanship, perhaps possessed of ideas that separate you from those around you.",
+    "details": [
+      "he, she, they, shifting",
+      "scattered, organized, grubby, singed",
+      "eccentric tool belt, beautiful whetstone, former patron’s insignia, massive packs"
+    ],
+    "demeanor": ["hopeful, cheerful, inquisitive, cynical"],
+    "nature": [
+      {
+        "name": "Perfectionist",
+        "description": "Clear your exhaustion track when you replace someone else’s existing tool or resource with something truly great."
+      },
+      {
+        "name": "Radical",
+        "description": "Clear your exhaustion track when you espouse dangerous ideas to the wrong audience."
+      }
+    ],
+    "drives": ["revenge", "greed", "protection", "ambition"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": -1,
+      "cunning": 2,
+      "finesse": 1,
+      "luck": 0,
+      "might": 0
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["counterfeit", "disable-device", "pick-lock"]
+    },
+    "weaponSkills": {
+      "allowed": ["cleave", "harry", "improvise", "trick-shot"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": ["toolbox", "repair", "big-pockets", "jury-rig", "nimble-mind", "dismantle"],
+      "presets": ["toolbox", "repair"]
+    },
+    "equipment": {
+      "startValue": 8
+    }
+  },
+  "vagrant": {
+    "id": "vagrant",
+    "name": "The Vagrant",
+    "description": "You are a charming, survivor vagabond, using words to get out of dangerous situations, perhaps even setting possible predators upon each other to keep them away from yourself.",
+    "details": [
+      "he, she, they, shifting",
+      "mangy, wild, patchwork, inconspicuous",
+      "stolen military insignia, tattered cloak, luck charm, gambling paraphernalia"
+    ],
+    "demeanor": ["excited, low key, thoughtful, angry"],
+    "nature": [
+      {
+        "name": "Glutton",
+        "description": "Clear your exhaustion track when you overindulge on vices like drink, food, and gambling."
+      },
+      {
+        "name": "Hustler",
+        "description": "Clear your exhaustion track when you try to spring a con on a powerful or dangerous mark."
+      }
+    ],
+    "drives": ["chaos", "thrills", "clean-paws", "wanderlust"],
+    "background": {
+      "where": [],
+      "why": [],
+      "whom": []
+    },
+    "stats": {
+      "charm": 2,
+      "cunning": 1,
+      "finesse": -1,
+      "luck": 0,
+      "might": 0
+    },
+    "roguishFeats": {
+      "allowed": [],
+      "presets": ["pick-lock", "sleight-of-hand"]
+    },
+    "weaponSkills": {
+      "allowed": ["vicious-strike", "harry", "improvise", "quick-shot"],
+      "presets": []
+    },
+    "moves": {
+      "allowed": ["instigator", "pleasant-facade", "desperate-smile", "charm-offensive", "lets-play", "pocket-sand"],
+      "presets": []
+    },
+    "equipment": {
+      "startValue": 9
+    }
   }
-]
+}
