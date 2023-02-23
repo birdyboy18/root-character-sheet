@@ -11,7 +11,7 @@ export const Container = ({ children }: Props) => {
     <>
       <div className="flex min-h-screen flex-col bg-cream-100">
         <Header />
-        <main className="flex flex-col items-center justify-center py-8">{children}</main>
+        <main className="flex flex-col items-center justify-center">{children}</main>
       </div>
     </>
   )

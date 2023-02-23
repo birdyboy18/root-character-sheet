@@ -31,6 +31,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   serve: ^14.2.0
+  tailwind-merge: ^1.9.1
   tailwindcss: ^3.2.7
   typescript: ^4.9.5
   vite: ^4.1.1
@@ -42,6 +43,7 @@ dependencies:
   generouted: 1.7.13_vite@4.1.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  tailwind-merge: 1.9.1
   zustand: 4.3.3_react@18.2.0
 
 devDependencies:
@@ -4132,6 +4134,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  /tailwind-merge/1.9.1:
+    resolution: {integrity: sha512-ED9MkiUHlmfh58EC1xHRqXcH1IQyRtmDP0AmXlugYkP2tvfu7ejtjFEHJLJt93mQ7ZJkcqSIgm9M394bq5vOJg==}
+    dev: false
 
   /tailwindcss/3.2.7_postcss@8.4.21:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}

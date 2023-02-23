@@ -33,6 +33,7 @@
       "might": 2
     },
     "roguishFeats": {
+      "choose": 1,
       "allowed": [],
       "presets": []
     },
@@ -82,6 +83,7 @@
       "might": -1
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["counterfeit", "sleight-of-hand"]
     },
@@ -138,6 +140,7 @@
       "might": 0
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["acrobatics", "sneak"]
     },
@@ -194,6 +197,7 @@
       "might": 1
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["hide", "sneak"]
     },
@@ -250,6 +254,7 @@
       "might": 2
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["blindside"]
     },
@@ -306,6 +311,7 @@
       "might": 0
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["acrobatics", "hide", "sneak"]
     },
@@ -362,6 +368,7 @@
       "might": -1
     },
     "roguishFeats": {
+      "choose": 4,
       "allowed": [],
       "presets": []
     },
@@ -376,7 +383,7 @@
         "rope-a-dope",
         "small-hands",
         "master-thief",
-        "node-for-gold"
+        "nose-for-gold"
       ],
       "presets": []
     },
@@ -418,6 +425,7 @@
       "might": 0
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["counterfeit", "disable-device", "pick-lock"]
     },
@@ -467,6 +475,7 @@
       "might": 0
     },
     "roguishFeats": {
+      "choose": 0,
       "allowed": [],
       "presets": ["pick-lock", "sleight-of-hand"]
     },
