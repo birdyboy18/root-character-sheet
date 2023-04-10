@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { LoaderFn, MakeGenerics, useMatch } from '@tanstack/react-location'
 
+import { TextInput } from '@/components'
 import { CharacterHeader } from '@/components/characterHeader'
 import { PatternedHeading } from '@/components/patternedHeading'
 import { ReputationManager } from '@/components/reputationManager'
@@ -80,7 +81,7 @@ export default function NewCharacter() {
           </div>
         </SheetSection>
         {/* Reputation Manager  */}
-        <SheetSection name="Reputation" className="w-full">
+        <SheetSection name="Reputation" className="w-full" hint="See background for starting reputation options">
           <div className="flex flex-col flex-wrap justify-between bg-white p-6">
             <ReputationManager />
           </div>
@@ -213,6 +214,78 @@ export default function NewCharacter() {
                 )
               })}
             </div>
+          </div>
+        </SheetSection>
+        {/* Background */}
+        <SheetSection name="Background">
+          <div className="flex flex-col flex-wrap justify-between bg-white p-6">
+            <p className="mb-2 text-xl">Details</p>
+            <ul className="mb-4 text-lg">
+              {playbook.details.map((item) => {
+                return (
+                  <li className="px-2 pb-2" key={item}>
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
+            <p className="mb-2 text-xl">Demeanor</p>
+            <ul className="mb-4 text-lg">
+              {playbook.demeanor.map((item) => {
+                return (
+                  <li className="px-2 pb-2" key={item}>
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
+            <p className="mb-2 text-xl">Where do you call home?</p>
+            <ul className="mb-4">
+              {playbook.background.where.map((item) => {
+                return (
+                  <label htmlFor={item} key={item} className="flex w-full px-2 pb-2">
+                    <input type="radio" name="where" id={item} className="mr-2" />
+                    {item !== 'custom' && <p className="text-lg">{item}</p>}
+                    {item === 'custom' && (
+                      <TextInput
+                        placeholder="name of your home clearing?"
+                        className="w-full border-b-black text-gray-700"
+                      />
+                    )}
+                  </label>
+                )
+              })}
+            </ul>
+            <p className="mb-2 text-xl">Why are you a vagabond?</p>
+            <ul className="mb-4">
+              {playbook.background.why.map((item) => {
+                return (
+                  <label htmlFor={item} key={item} className="flex w-full px-2 pb-2">
+                    <input type="radio" name="why" id={item} className="mr-2" />
+                    <p className="text-lg">{item}</p>
+                  </label>
+                )
+              })}
+            </ul>
+            <p className="mb-2 text-xl">Whom have you left behind?</p>
+            <ul className="mb-4">
+              {playbook.background.whom.map((item) => {
+                return (
+                  <label htmlFor={item} key={item} className="flex w-full px-2 pb-2">
+                    <input type="radio" name="whom" id={item} className="mr-2" />
+                    <p className="text-lg">{item}</p>
+                  </label>
+                )
+              })}
+            </ul>
+            <p className="mb-4 text-xl">
+              Which faction have you served the most?{' '}
+              <span className="text-lg text-gray-500">(mark two prestige for appropriate group)</span>
+            </p>
+            <p className="mb-2 text-xl">
+              With which faction have you earned a special enmity?{' '}
+              <span className="text-lg text-gray-500">(mark one notoriety for appropriate group)</span>
+            </p>
           </div>
         </SheetSection>
       </div>
