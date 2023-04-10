@@ -7,7 +7,17 @@ import { PatternedHeading } from '@/components/patternedHeading'
 import { ReputationManager } from '@/components/reputationManager'
 import { SheetSection } from '@/components/sheetSection'
 import { StatCircle } from '@/components/statCircle'
-import type { DescriptiveItem, Playbook, PlaybookId, PlaybookMove, RoguishFeat, StatsKey, WeaponSkill } from '@/data'
+import type {
+  Connection,
+  DescriptiveItem,
+  Playbook,
+  PlaybookId,
+  PlaybookMove,
+  RoguishFeat,
+  StatsKey,
+  WeaponSkill,
+} from '@/data'
+import connectionsJson from '@/data/connections.json'
 import drivesJson from '@/data/drives.json'
 import movesJson from '@/data/moves.json'
 import playbooks from '@/data/playbooks.json'
@@ -44,6 +54,7 @@ export default function NewCharacter() {
   const roguishFeats: RoguishFeat[] = Object.values(roguishFeatsJson)
   const weaponSkills: [string, WeaponSkill][] = Object.entries(weaponSkillsJson)
   const moves = movesJson as { [key: string]: PlaybookMove }
+  const connections = connectionsJson as { [key: string]: Connection }
   return (
     <>
       <CharacterHeader playbook={playbook.name} />
@@ -286,6 +297,23 @@ export default function NewCharacter() {
               With which faction have you earned a special enmity?{' '}
               <span className="text-lg text-gray-500">(mark one notoriety for appropriate group)</span>
             </p>
+          </div>
+        </SheetSection>
+        {/* connections */}
+        <SheetSection name="Connections">
+          <div className="flex flex-col flex-wrap justify-between bg-white p-6">
+            {playbook.connections.map((connectionName) => {
+              const connection = connections[connectionName]
+              return (
+                <div key={connectionName} className="mb-6 text-xl">
+                  <p className="mb-2 text-3xl">{connection.name}</p>
+                  <p className="mb-2">{connection.description}</p>
+                  <p className="border-l-2 border-dashed border-gray-500 px-2 italic text-gray-500">
+                    {connection.benefit}
+                  </p>
+                </div>
+              )
+            })}
           </div>
         </SheetSection>
       </div>

@@ -29,6 +29,10 @@ export interface PlaybookMove extends DescriptiveItem {
   }
 }
 
+export interface Connection extends DescriptiveItem {
+  benefit: string
+}
+
 export type StatsKey = keyof Playbook['stats']
 
 export type Playbook = {
@@ -44,6 +48,7 @@ export type Playbook = {
     why: string[]
     whom: string[]
   }
+  connections: string[]
   stats: {
     charm: number
     cunning: number
