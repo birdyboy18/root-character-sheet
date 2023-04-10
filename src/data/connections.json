@@ -1,0 +1,32 @@
+{
+  "partner": {
+    "name": "Partner",
+    "description": "{x} and I fought alongside each other to defend a clearing from a faction’s advances...but we failed. Why did we defend the clearing? Why did we fail? Who defeated us?",
+    "benefit": "When you fill in this connection, you each mark 2-prestige with the faction you helped, and mark 2-notoriety with the faction you harmed. During play, if you are spotted together, then any prestige or notoriety gains with those factions are doubled for the two of you."
+  },
+  "friend": {
+    "name": "Friend",
+    "description": "I traveled with {x} for a time right after I became a vagabond. They helped keep me safe and showed me the Woodland. What keepsake did I gift them?",
+    "benefit": "When you help them, you can mark 2-exhaustion to give a +2, instead of 1-exhaustion for a +1."
+  },
+  "protector": {
+    "name": "Protector",
+    "description": "I once protected {x} from a mortal blow during a fight, and I would do it again. Why?",
+    "benefit": "When they are in reach, mark exhaustion to take a blow meant for them. If you do, take +1 ongoing to weapon moves for the rest of the scene."
+  },
+  "professional": {
+    "name": "Professional",
+    "description": "{x} and I tried to blaze a new trail between two clearings; without the support of the major factions, it never fully came to fruition.",
+    "benefit": "If you share information with them after reading a tense situation, you both benefit from the +1 for acting on the answers. If you help them while they attempt a roguish feat, you gain choices on the help move as if you had marked 2-exhaustion when you mark 1-exhaustion."
+  },
+  "watcher": {
+    "name": "Watcher",
+    "description": "I was tricked, conned, or deceived by {x} once. Why do I choose to continue working with them?",
+    "benefit": "When you figure them out, you always hold 1, even on a miss. When you plead with them to go along with you, you can let them clear 2-exhaustion instead of 1."
+  },
+  "family": {
+    "name": "Family",
+    "description": "{x} and I had each other’s back when we were run out of a clearing because our natures got out of hand.",
+    "benefit": "When you help them fulfill their nature, you both clear your exhaustion track."
+  }
+}
