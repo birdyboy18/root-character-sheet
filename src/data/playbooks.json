@@ -31,6 +31,7 @@
       ],
       "whom": ["my peer and friend", "my family", "my loved one", "my ward", "my commander"]
     },
+    "connections": ["protector", "partner"],
     "stats": {
       "charm": 1,
       "cunning": 0,
@@ -81,6 +82,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["partner", "friend"],
     "stats": {
       "charm": 2,
       "cunning": 1,
@@ -138,6 +140,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["professional", "friend"],
     "stats": {
       "charm": 0,
       "cunning": -1,
@@ -195,6 +198,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["watcher", "protector"],
     "stats": {
       "charm": -1,
       "cunning": 1,
@@ -252,6 +256,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["partner", "watcher"],
     "stats": {
       "charm": 0,
       "cunning": 1,
@@ -309,6 +314,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["friend", "partner"],
     "stats": {
       "charm": 1,
       "cunning": -1,
@@ -366,6 +372,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["professional", "friend"],
     "stats": {
       "charm": 0,
       "cunning": 0,
@@ -423,6 +430,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["professional", "family"],
     "stats": {
       "charm": -1,
       "cunning": 2,
@@ -473,6 +481,7 @@
       "why": [],
       "whom": []
     },
+    "connections": ["family", "watcher"],
     "stats": {
       "charm": 2,
       "cunning": 1,
