@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import JsxParser from 'react-jsx-parser'
 import { LoaderFn, MakeGenerics, useMatch } from '@tanstack/react-location'
 
 import { TextInput } from '@/components'
@@ -304,10 +305,15 @@ export default function NewCharacter() {
           <div className="flex flex-col flex-wrap justify-between bg-white p-6">
             {playbook.connections.map((connectionName) => {
               const connection = connections[connectionName]
+              const x = () => {
+                return <TextInput placeholder="Character's Name" className="border-b-black text-gray-700" />
+              }
               return (
                 <div key={connectionName} className="mb-6 text-xl">
                   <p className="mb-2 text-3xl">{connection.name}</p>
-                  <p className="mb-2">{connection.description}</p>
+                  {/* eslint-disable-next-line  */}
+                  {/* @ts-ignore */}
+                  <JsxParser jsx={connection.description} components={{ x }} className="mb-4" />
                   <p className="border-l-2 border-dashed border-gray-500 px-2 italic text-gray-500">
                     {connection.benefit}
                   </p>
