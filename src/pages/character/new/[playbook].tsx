@@ -4,6 +4,7 @@ import { LoaderFn, MakeGenerics, useMatch } from '@tanstack/react-location'
 
 import { TextInput } from '@/components'
 import { CharacterHeader } from '@/components/characterHeader'
+import { EquipmentManager } from '@/components/equipmentManager'
 import { PatternedHeading } from '@/components/patternedHeading'
 import { ReputationManager } from '@/components/reputationManager'
 import { SheetSection } from '@/components/sheetSection'
@@ -96,6 +97,12 @@ export default function NewCharacter() {
         <SheetSection name="Reputation" className="w-full" hint="See background for starting reputation options">
           <div className="flex flex-col flex-wrap justify-between bg-white p-6">
             <ReputationManager />
+          </div>
+        </SheetSection>
+        {/* Equipment Manager  */}
+        <SheetSection name="Equipment" className="w-full">
+          <div className="flex flex-col flex-wrap justify-between bg-white px-6 py-2">
+            <EquipmentManager value={10} might={playbook.stats.might} />
           </div>
         </SheetSection>
         {/* Nature */}
