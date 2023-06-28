@@ -1,0 +1,167 @@
+{
+  "arrow-proof": {
+    "name": "Arrow-Proof",
+    "description": "Ignore the first hit dealing injury from arrows that you suffer in a scene.",
+    "positive": true
+  },
+  "blunted": {
+    "name": "Blunted",
+    "description": "This weapon inflicts exhaustion, not injury.",
+    "positive": true
+  },
+  "bulky": {
+    "name": "Bulky",
+    "description": "This weapon cannot be hidden and is always visible while on your body. Mark exhaustion whenever you attempt a roguish feat or trust fate to sneak, hide, blindside, or perform an act of acrobatics. (Large weapons)",
+    "positive": true
+  },
+  "ceremonial": {
+    "name": "Ceremonial",
+    "description": "Choose an attached faction. While this item is displayed, treat yourself as having +1 Reputation with that faction, and -1 Reputation with other factions.",
+    "positive": true
+  },
+  "comfortable": {
+    "name": "Comfortable",
+    "description": "This item counts as 1 fewer Load.",
+    "positive": true
+  },
+  "cumbersome": {
+    "name": "Cumbersome",
+    "description": "Mark one exhaustion when you don your armor—clear one exhaustion when you take it off.",
+    "positive": false
+  },
+  "eaglecraft": {
+    "name": "Eaglecraft",
+    "description": "Mark wear when engaging in melee to both make and suffer another exchange of harm.",
+    "positive": true
+  },
+  "fast": {
+    "name": "Fast",
+    "description": "Mark wear when engaging in melee to suffer 1 fewer harm, even on a miss.",
+    "positive": true
+  },
+  "friendly": {
+    "name": "Friendly",
+    "description": "When you meet someone important, mark exhaustion to roll with your Reputation +1.",
+    "positive": true
+  },
+  "flexible": {
+    "name": "Flexible",
+    "description": "When you grapple with someone, mark exhaustion to ignore the first choice they make.",
+    "positive": true
+  },
+  "foxfolk-steel": {
+    "name": "Foxfolk Steel",
+    "description": "Ignore the first box of wear you mark on this item each session.",
+    "positive": true
+  },
+  "hair-trigger": {
+    "name": "Hair Trigger",
+    "description": "Mark wear to target a vulnerable foe at close range instead of far.",
+    "positive": true
+  },
+  "healers-kit": {
+    "name": "Healer's Kit",
+    "description": "Mark wear to clear exhaustion. Mark 2-wear to clear injury.",
+    "positive": true
+  },
+  "heavy-bludgeon": {
+    "name": "Heavy Bludgeon",
+    "description": "Mark exhaustion to to ignore your enemy’s armor when you inflict harm.",
+    "positive": true
+  },
+  "heavy-draw-weight": {
+    "name": "Heavy Draw Weight",
+    "description": "When you target a vulnerable foe with this bow, mark exhaustion to inflict 1 additional injury.",
+    "positive": true
+  },
+  "iron-bolts": {
+    "name": "Iron Bolts",
+    "description": "This weapon inflicts 1 additional wear when its harm is absorbed by armor.",
+    "positive": true
+  },
+  "large": {
+    "name": "Large",
+    "description": "Mark exhaustion when inflicting harm with this weapon to inflict 1 additional harm.",
+    "positive": true
+  },
+  "luxury": {
+    "name": "Luxury",
+    "description": "After creation, this item is worth +3 Value.",
+    "positive": true
+  },
+  "mousefolk-steel": {
+    "name": "Mousefolk Steel",
+    "description": "Mark wear to engage in melee using Cunning instead of Might.",
+    "positive": true
+  },
+  "oiled-string": {
+    "name": "Oiled String",
+    "description": "Mark wear to use the weapon skill quick shot even if you don’t have it.",
+    "positive": true
+  },
+  "quick": {
+    "name": "Quick",
+    "description": "Mark exhaustion to engage in melee with Finesse instead of Might.",
+    "positive": true
+  },
+  "rabbitfolk-steel": {
+    "name": "Rabbitfolk Steel",
+    "description": "Mark wear to engage in melee with Finesse instead of Might.",
+    "positive": true
+  },
+  "reach": {
+    "name": "Reach",
+    "description": "When you engage in melee, mark wear on this weapon to inflict harm instead of trading harm; you cannot use this tag if your enemy’s weapon also has reach.",
+    "positive": true
+  },
+  "sharp": {
+    "name": "Sharp",
+    "description": "Mark wear when inflicting harm with this weapon to inflict 1 additional harm.",
+    "positive": true
+  },
+  "short-limbs": {
+    "name": "Short Limbs",
+    "description": "Mark wear to fire a quick shot at far range.",
+    "positive": true
+  },
+  "slow": {
+    "name": "Slow",
+    "description": "When you engage in melee with this weapon, choose one fewer option. Mark wear to ignore this effect.",
+    "positive": false
+  },
+  "thick": {
+    "name": "Thick",
+    "description": "When you mark wear on this shield to block a hit, you only ever mark 1-wear, even if you are blocking more harm from a single hit.",
+    "positive": true
+  },
+  "throwable": {
+    "name": "Throwable",
+    "description": "Mark exhaustion to target a vulnerable foe with this weapon at far range.",
+    "positive": true
+  },
+  "tightly-woven": {
+    "name": "Tightly Woven",
+    "description": "When you take a few seconds to repair this armor after a fight, clear 1-wear you marked during the fight.",
+    "positive": true
+  },
+  "tricky": {
+    "name": "Tricky",
+    "description": "When you use this item to trick an NPC by distracting them at a distance, on a 7-9 mark wear to eliminate one option from the trick an NPC move before the NPC picks.",
+    "positive": true
+  },
+  "unassuming": {
+    "name": "Unassuming",
+    "description": "Until you harm an enemy, they will never deem you more of a threat than other vagabonds with arms and armor.",
+    "positive": true
+  },
+  "versatile": {
+    "name": "Versatile",
+    "description": "When you move to or from a range this weapon can reach, mark wear to make a quick strike and inflict 1-injury on any opponent in this weapon’s range.",
+    "positive": true
+  },
+  "weighty": {
+    "name": "Weighty",
+    "description": "This item counts as 1 additional Load.",
+    "positive": false
+  }
+}
