@@ -1,3 +1,5 @@
+import * as Hovercard from '@radix-ui/react-hover-card'
+
 import { cn } from '@/lib/utils'
 
 import equipmentTags from '../data/equipmentTags.json'
@@ -24,6 +26,11 @@ interface EquipmentItem {
   load: number
 }
 
+interface Tag {
+  name: string
+  description: string
+}
+
 interface EquipmentItemProps {
   equipment: EquipmentItem
 }
@@ -46,6 +53,20 @@ const greatSword: EquipmentItem = {
   equipmentTags: ['sharp', 'large', 'bulky', 'eaglecraft'],
   range: ['Close Range'],
   load: 2,
+}
+
+const TagPopover = (props: { tag: Tag; children: JSX.Element }) => {
+  return (
+    <Hovercard.Root openDelay={200} closeDelay={100}>
+      <Hovercard.Trigger>{props.children}</Hovercard.Trigger>
+      <Hovercard.Portal>
+        <Hovercard.Content side="top" sideOffset={10} className={cn('flex max-w-xs flex-wrap rounded-t  bg-white')}>
+          <div className="w-full rounded-t bg-slate-900 px-4 py-1 text-white">{props.tag.name}</div>
+          <div className="w-full border border-opacity-25 px-4 py-2 shadow-md">{props.tag.description}</div>
+        </Hovercard.Content>
+      </Hovercard.Portal>
+    </Hovercard.Root>
+  )
 }
 
 const calculateEquipmentValue = (equipment: EquipmentItem) => {
@@ -102,9 +123,11 @@ const EquipmentItem = ({ equipment }: EquipmentItemProps) => {
               {equipment.weaponMoveTags.map((moveId) => {
                 const skill = weaponSkills[moveId]
                 return (
-                  <span className={cn('mr-2 rounded-md bg-zinc-800 py-1 px-4 text-xs text-white')} key={moveId}>
-                    {skill.name}
-                  </span>
+                  <TagPopover tag={skill} key={skill.name}>
+                    <span className={cn('mr-2 rounded-md bg-zinc-800 py-1 px-4 text-xs text-white')} key={moveId}>
+                      {skill.name}
+                    </span>
+                  </TagPopover>
                 )
               })}
             </div>
@@ -118,15 +141,17 @@ const EquipmentItem = ({ equipment }: EquipmentItemProps) => {
             {equipment.equipmentTags.map((tagId) => {
               const tag = equipmentTags[tagId]
               return (
-                <span
-                  className={cn('mr-2 rounded-full px-4 py-1 text-sm text-white', {
-                    'bg-lime-700': tag.positive,
-                    'bg-red-800': !tag.positive,
-                  })}
-                  key={tagId}
-                >
-                  {tag.name}
-                </span>
+                <TagPopover tag={tag} key={tag.name}>
+                  <span
+                    className={cn('mr-2 rounded-full px-4 py-1 text-sm text-white', {
+                      'bg-lime-700': tag.positive,
+                      'bg-red-800': !tag.positive,
+                    })}
+                    key={tagId}
+                  >
+                    {tag.name}
+                  </span>
+                </TagPopover>
               )
             })}
           </div>
