@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 
 import equipmentTags from '../data/equipmentTags.json'
 import weaponSkills from '../data/weaponSkills.json'
+import { EquipmentModal } from './equipmentModal'
 
 interface EquipmentManagerProps {
   value: number
@@ -16,7 +17,7 @@ type WeaponRange = 'Intimate Range' | 'Close Range' | 'Far Range'
 type WeaponMoveKey = keyof typeof weaponSkills
 type EquipmentTagKey = keyof typeof equipmentTags
 
-interface EquipmentItem {
+export interface EquipmentItem {
   name: string
   wear: number
   currentWear: number
@@ -32,7 +33,7 @@ interface Tag {
 }
 
 interface EquipmentItemProps {
-  equipment: EquipmentItem
+  equipment?: EquipmentItem
 }
 
 const plateArmour: EquipmentItem = {
@@ -86,7 +87,7 @@ const calculateEquipmentValue = (equipment: EquipmentItem) => {
   return value
 }
 
-const EquipmentItem = ({ equipment }: EquipmentItemProps) => {
+export const EquipmentItem = ({ equipment }: EquipmentItemProps) => {
   const wearArray = new Array(equipment.wear).fill(0)
   const value = calculateEquipmentValue(equipment)
   return (
@@ -170,11 +171,18 @@ export const EquipmentManager = ({ value, might }: EquipmentManagerProps) => {
 
   return (
     <div>
-      <div className="flex flex-wrap items-center border-b-2 pb-2 text-lg">
-        <p className="mr-4 px-2">Value: {value}</p>
-        <p className="px-2">
-          Carrying: {capacity}/{maxCapacity}
-        </p>
+      <div className="flex flex-wrap items-center justify-between border-b-2 pb-2 text-lg">
+        <div className="flex w-auto flex-wrap">
+          <p className="mr-4 px-2">Value: {value}</p>
+          <p className="px-2">
+            Carrying: {capacity}/{maxCapacity}
+          </p>
+        </div>
+        <div>
+          <EquipmentModal>
+            <button className="rounded bg-blue-600 px-3 py-1 text-white hover:bg-blue-700">Add Equipment</button>
+          </EquipmentModal>
+        </div>
       </div>
       <div className="flex flex-wrap py-2">
         {equipment &&
